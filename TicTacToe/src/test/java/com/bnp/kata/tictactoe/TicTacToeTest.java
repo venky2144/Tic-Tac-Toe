@@ -1,5 +1,6 @@
 package com.bnp.kata.tictactoe;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Test;
@@ -22,5 +23,12 @@ public class TicTacToeTest {
 	{
 		TicTacToe ticTacToeTestObj = new TicTacToe();
 		ticTacToeTestObj.getPosition(0, 1);
+	}
+	@Test
+	public void checkRowsForWin()
+	{
+		TicTacToe ticTacToeTestObj = new TicTacToe();
+		assertTrue(ticTacToeTestObj.testCheckRowsForWin());
+		
 	}
 }
